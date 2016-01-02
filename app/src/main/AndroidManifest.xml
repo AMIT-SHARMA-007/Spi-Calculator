@@ -4,24 +4,132 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_assignment_black_24dp"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
+            android:label="SCal">
+
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Ce5"
+            android:label="C.E - 5th">
+        </activity>
+        <activity android:name=".Ce3"
+            android:label="C.E - 3rd">
+        </activity>
+        <activity android:name=".Ce1"
+            android:label="C.E - 1st">
+        </activity>
+
+        <activity android:name=".It1"
+            android:label="I.T - 1st">
+        </activity>
+
+
+        <activity android:name=".It3"
+            android:label="I.T - 3rd">
+        </activity>
+
+        <activity android:name=".It5"
+            android:label="I.T - 5th">
+        </activity>
+
+        <activity android:name=".Me1"
+            android:label="M.E - 1st">
+        </activity>
+
+        <activity android:name=".Me3"
+            android:label="M.E - 3rd">
+        </activity>
+
+        <activity android:name=".Me5"
+            android:label="M.E - 5th">
+        </activity>
+        <activity android:name=".Civil1"
+            android:label="Civil - 1st">
+        </activity>
+        <activity android:name=".Civil3"
+            android:label="Civil - 3rd">
+        </activity>
+
+        <activity android:name=".Civil5"
+            android:label="Civil - 5th">
+        </activity>
+
+        <activity android:name=".Electrical1"
+            android:label="Electrical - 1st">
+        </activity>
+
+        <activity android:name=".Electrical3"
+            android:label="Electrical - 3rd">
+        </activity>
+
+
+        <activity android:name=".Electrical5"
+            android:label="Electrical - 5th">
+        </activity>
+
+        <activity android:name=".Ec1"
+            android:label="Ec - 1st">
+        </activity>
+
+
+        <activity android:name=".Ec3"
+            android:label="Ec - 3rd">
+        </activity>
+
+        <activity android:name=".Ec5"
+            android:label="Ec - 5th">
+        </activity>
+
+        <activity android:name=".Ic1"
+            android:label="Ic - 1st">
+        </activity>
+
+
+        <activity android:name=".Ic3"
+            android:label="Ic - 3rd">
+        </activity>
+
+
+        <activity android:name=".Ic5"
+            android:label="Ic - 5th">
+        </activity>
+
+        <activity android:name=".Chemical1"
+            android:label="Chemical - 1st">
+        </activity>
+
+        <activity android:name=".Chemical3"
+            android:label="Chemical - 3rd">
+        </activity>
+
+
+        <activity android:name=".Chemical5"
+            android:label="Chemical - 5th">
+        </activity>
+
+
+
         <activity android:name=".Subjects"
-            android:label="resultChecker">
+            android:label="Scal">
+        </activity>
+
+        <activity android:name=".SelectNoSubjects"
+            android:label="Scal">
         </activity>
 
         <activity android:name=".Result"
-            android:label="resultChecker">
+            android:label="Scal">
         </activity>
     </application>
 

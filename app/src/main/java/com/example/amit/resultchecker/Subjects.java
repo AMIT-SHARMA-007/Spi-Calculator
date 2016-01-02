@@ -16,9 +16,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by amit on 13-Jul-15.
- */
+/*
+  Created by amit on 13-Jul-15. */
+
+
 public class Subjects extends Activity {
 
     private int noOfSubjects;
@@ -41,6 +42,8 @@ public class Subjects extends Activity {
         credts.add("4");
         credts.add("3");
         credts.add("2");
+
+
         credts.add("1");
         credts.add("0");
         dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,credts);
@@ -82,9 +85,13 @@ public class Subjects extends Activity {
                                 flag=0;
                             }
                             else{
-                                Toast.makeText(getApplicationContext(), "Dude!!! Write something (Atleast here)", Toast.LENGTH_SHORT).show();
                                 flag=1;
                             }
+
+                        }
+                        if(flag == 1){
+
+                            Toast.makeText(getApplicationContext(), "No blank spaces allowed", Toast.LENGTH_SHORT).show();
 
                         }
                         if(flag==0) {

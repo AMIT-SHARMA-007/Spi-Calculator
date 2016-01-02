@@ -27,7 +27,7 @@ public class Result extends Activity {
     private TextView temp[];
     private int credits[];
     private int noOfSubjects;
-    private String grades[];
+   // private String grades[];
     private int gradess[];
     private double result;
     private Spinner[] grad;
@@ -57,7 +57,7 @@ public class Result extends Activity {
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         subs = extras.getStringArray("Subjects");
         credits = extras.getIntArray("Credits");
-        grades = new String[noOfSubjects];
+      //  grades = new String[noOfSubjects];
         gradess = new int[noOfSubjects];
         welomeText = new TextView(this);
         welomeText.setLayoutParams(lparams);
@@ -92,33 +92,35 @@ public class Result extends Activity {
                     @Override
                     public void onClick(View v) {
                         //  Toast.makeText(getApplicationContext(), creditss[0].getText().toString(), Toast.LENGTH_SHORT).show();
-                        for (int j = 0; j < noOfSubjects; j++) {
- /*                           if(!((subjects[j].getText().toString()).equals("")))
+
+                      /*  for (int j = 0; j < noOfSubjects; j++) {
+ *//*                           if(!((subjects[j].getText().toString()).equals("")))
                             grades[j] = subjects[j].getText().toString();
                             else
                                 Toast.makeText(getApplicationContext(), "Dude!!! Write something (Atleast here)", Toast.LENGTH_SHORT).show();
-*/
-                            grades[j] = grad[j].getSelectedItem().toString();
-                        }
+*//*
+                        //    grades[j] = grad[j].getSelectedItem().toString();
+
+                        }*/
                         for (int j = 0; j < noOfSubjects; j++) {
 
-                            if(grades[j].equals("a+")||grades[j].equals("A+"))
+                            if(grad[j].getSelectedItemId()==0)
                                 gradess[j] = 10;
-                            else if(grades[j].equals("a")||grades[j].equals("A"))
+                            else if(grad[j].getSelectedItemId()==1)
                                 gradess[j] = 9;
-                            else if(grades[j].equals("b+")||grades[j].equals("B+"))
+                            else if(grad[j].getSelectedItemId()==2)
                                 gradess[j] = 8;
-                            else if(grades[j].equals("b")||grades[j].equals("B"))
+                            else if(grad[j].getSelectedItemId()==3)
                                 gradess[j] = 7;
-                            else if(grades[j].equals("c+")||grades[j].equals("C+"))
+                            else if(grad[j].getSelectedItemId()==4)
                                 gradess[j] = 6;
-                            else if(grades[j].equals("c")||grades[j].equals("c"))
+                            else if(grad[j].getSelectedItemId()==5)
                                 gradess[j] = 5;
-                            else if(grades[j].equals("if")||grades[j].equals("IF")||grades[j].equals("iF")||grades[j].equals("If"))
+                            else if(grad[j].getSelectedItemId()==6)
                                 gradess[j] = 0;
                         }
 
-                        float sum =0,tot=0,temp=0,temp1=0;
+                        float sum =0.0f,tot=0.0f,temp=0.0f,temp1=0.0f,result=0.0f;
 
                         for (int j = 0; j < noOfSubjects; j++) {
                             temp = (float)(credits[j]*gradess[j]);

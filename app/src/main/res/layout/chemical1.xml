@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculus"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_1"
+        android:spinnerMode="dropdown"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Chemistry"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_2"
+        android:spinnerMode="dropdown"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E.E.S"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_3"
+        android:spinnerMode="dropdown"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E.E.E"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_4"
+        android:spinnerMode="dropdown"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A.O.P"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_5"
+        android:spinnerMode="dropdown"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="C.S"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_6"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        ></Spinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E.W.P"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_grade_7"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        ></Spinner>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_button"
+        android:layout_marginTop="20dp"
+        android:text="Get Result"/>
+
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
